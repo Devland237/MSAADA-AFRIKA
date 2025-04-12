@@ -2,84 +2,87 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/app/assets/images/logo.svg";
+import { useTranslation } from "@/app/hooks/useTranslation"; 
 
-export default function index() {
+export default function Footer() {
+  const { t } = useTranslation(); 
+
   const FooterItems = [
     {
       id: 1,
-      title: "A Propos",
+      title: t.footer.aboutUs, 
       links: [
         {
           id: 1,
-          name: "Nos Services",
+          name: t.footer.services, 
           href: "/nos-services",
         },
         {
           id: 2,
-          name: "Nos Services",
+          name: t.footer.services, // Traduction
           href: "/nos-services",
         },
         {
           id: 3,
-          name: "Nos Services",
+          name: t.footer.services, // Traduction
           href: "/nos-services",
         },
       ],
     },
     {
       id: 2,
-      title: "Lien de Page",
+      title: t.footer.pageLinks, // Traduction
       links: [
         {
           id: 1,
-          name: "Accueil",
+          name: t.footer.home, // Traduction
           href: "/accueil",
         },
         {
           id: 2,
-          name: "A Propos",
+          name: t.footer.aboutUs, // Traduction
           href: "/a-propos",
         },
         {
           id: 3,
-          name: "Nos Services",
+          name: t.footer.services, // Traduction
           href: "/nos-services",
         },
         {
           id: 4,
-          name: "Nos Prestataires",
+          name: t.footer.providers, 
           href: "/prestataires",
         },
       ],
     },
     {
       id: 3,
-      title: "Nos services",
+      title: t.footer.ourServices, 
       links: [
         {
           id: 1,
-          name: "Nos Services",
+          name: t.footer.services, 
           href: "/nos-services",
         },
         {
           id: 2,
-          name: "Nos Services",
+          name: t.footer.services, 
           href: "/nos-services",
         },
         {
           id: 3,
-          name: "Nos Services",
+          name: t.footer.services, 
           href: "/nos-services",
         },
       ],
     },
     {
       id: 4,
-      title: "Nos Pages",
+      title: t.footer.pages, 
       links: [
         {
           id: 1,
-          name: "Follow Us",
+          name: t.footer.followUs, 
           href: "/follow-us",
         },
       ],
@@ -113,7 +116,9 @@ export default function index() {
               ))}
             </div>
           </div>
-          <p className="flex justify-center items-center text-white font-extralight text-lg">Copyright, Policy </p>
+          <p className="flex justify-center items-center text-white font-extralight text-lg">
+            {t.footer.copyright}
+          </p>
         </div>
       </div>
     </>

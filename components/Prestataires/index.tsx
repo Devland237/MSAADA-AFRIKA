@@ -4,8 +4,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -13,8 +11,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function Prestataires() {
+  const { t } = useTranslation(); // Utilisation du hook de traduction
   const plugin = useRef(
     Autoplay({ delay: 4000, stopOnInteraction: true })
   );
@@ -22,38 +22,38 @@ export default function Prestataires() {
   const prestataires = [
     {
       id: 1,
-      title: "Recent Prestataires",
-      description: "Lorem ipsum dolor sit amet consectetur",
+      title: t.prestataires.recentTitle,
+      description: t.prestataires.description,
       image: null,
     },
     {
       id: 2,
-      title: "Recent Prestataires",
-      description: "Lorem ipsum dolor sit amet consectetur",
+      title: t.prestataires.recentTitle,
+      description: t.prestataires.description,
       image: null,
     },
     {
       id: 3,
-      title: "Recent Prestataires",
-      description: "Lorem ipsum dolor sit amet consectetur",
+      title: t.prestataires.recentTitle,
+      description: t.prestataires.description,
       image: null,
     },
     {
       id: 4,
-      title: "Recent Prestataires",
-      description: "Lorem ipsum dolor sit amet consectetur",
+      title: t.prestataires.recentTitle,
+      description: t.prestataires.description,
       image: null,
     },
     {
       id: 5,
-      title: "Recent Prestataires",
-      description: "Lorem ipsum dolor sit amet consectetur",
+      title: t.prestataires.recentTitle,
+      description: t.prestataires.description,
       image: null,
     },
     {
       id: 6,
-      title: "Recent Prestataires",
-      description: "Lorem ipsum dolor sit amet consectetur",
+      title: t.prestataires.recentTitle,
+      description: t.prestataires.description,
       image: null,
     },
   ];
@@ -61,17 +61,17 @@ export default function Prestataires() {
   return (
     <section className="relative py-16">
       <div className="absolute inset-0 bg-gradient-to-b from-[#54010B] via-[#54010B] to-[#BA0218]" />
-      <div 
-            className="absolute inset-0" 
-            style={{
-              background: "linear-gradient(69deg, #BA0218 0%, #54010B 50%, transparent 100%)"
-            }}
-          />
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(69deg, #BA0218 0%, #54010B 50%, transparent 100%)",
+        }}
+      />
       <div className="custom-container relative z-10">
         <h2 className="text-4xl font-bold text-white text-center mb-12">
-          Nos Prestataires
+          {t.prestataires.title}
         </h2>
-        
+
         <Carousel
           plugins={[plugin.current]}
           className="w-full"
@@ -108,15 +108,13 @@ export default function Prestataires() {
                       className="bg-white text-[#BA0218] hover:bg-gray-100"
                       asChild
                     >
-                      <Link href="/prestataires">Read more</Link>
+                      <Link href="/prestataires">{t.prestataires.readMore}</Link>
                     </Button>
                   </CardFooter>
                 </Card>
               </CarouselItem>
             ))}
           </CarouselContent>
-          {/* <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" /> */}
         </Carousel>
 
         <div className="flex justify-center gap-2 mt-8">
@@ -127,4 +125,4 @@ export default function Prestataires() {
       </div>
     </section>
   );
-} 
+}

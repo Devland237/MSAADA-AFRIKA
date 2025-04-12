@@ -4,37 +4,32 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
+import { useTranslation } from "@/app/hooks/useTranslation";
 import ero from "@/app/assets/images/ad1 1.svg";
+
 export default function Testimonials() {
+  const { t } = useTranslation();
   const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
 
   const testimonials = [
     {
       id: 1,
-      name: "CEO AFRIKA GARAGE",
-      role: "IDF",
+      name: t.testimonials.testimonial1.name,
+      role: t.testimonials.testimonial1.role,
       image: ero,
-      content: [
-        "Lorem ipsum dolor sit amet consectetur. Neque proin placerat sit feugiat eget risus pharetra sit a.",
-        "Lorem ipsum dolor sit amet consectetur. Neque proin placerat sit feugiat eget risus pharetra sit a.",
-      ],
+      content: t.testimonials.testimonial1.content,
     },
     {
       id: 2,
-      name: "CEO AFRIKA GARAGE",
-      role: "IDF",
+      name: t.testimonials.testimonial2.name,
+      role: t.testimonials.testimonial2.role,
       image: ero,
-      content: [
-        "Lorem ipsum dolor sit amet consectetur. Neque proin placerat sit feugiat eget risus pharetra sit a.",
-        "Lorem ipsum dolor sit amet consectetur. Neque proin placerat sit feugiat eget risus pharetra sit a.",
-      ],
+      content: t.testimonials.testimonial2.content,
     },
   ];
 
@@ -82,8 +77,6 @@ export default function Testimonials() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          {/* <CarouselPrevious className="hidden md:flex cursor-pointer" />
-          <CarouselNext className="hidden md:flex cursor-pointer" /> */}
         </Carousel>
       </div>
     </section>

@@ -1,36 +1,77 @@
 export const fr = {
-  navigation: {
+  header: {
+    needHelp: 'Besoin d\'aide ?',
+    login: 'Se connecter'
+  },
+  menu: {
     home: 'Accueil',
-    aboutUs: 'À propos',
+    about: 'À propos',
     services: 'Services',
-    search: 'Rechercher',
-    contact: 'Contact'
-  },
-  hero: {
-    title: 'Optimisez vos décisions commerciales en Afrique',
-    description: 'Bienvenue chez Dening Insights, votre partenaire de confiance pour les services de conseil aux entreprises axés sur l\'Afrique subsaharienne.\n\nExploitez nos données, analyses et rapports pour obtenir des informations précieuses sur les entreprises, les secteurs et les pays et débloquer les opportunités en Afrique subsaharienne.\n\nNotre expertise spécialisée en due diligence commerciale, développement commercial et vérification des antécédents est cruciale pour aider nos clients à prendre des décisions éclairées et stratégiques pour leurs entreprises.',
-    button: 'Contactez-nous',
-    start: 'Commencer'
-  },
-  home: {
-    title: "Services de conseil aux entreprises experts",
-    description: "Dening Insights est un cabinet de conseil aux entreprises de premier plan basé à Londres. Nous sommes spécialisés dans la fourniture de données, d'analyses, de rapports et de conseils aux clients de différents secteurs, les aidant à prendre des décisions d'investissement et stratégiques éclairées.",
-    button: "À propos de nous"
+    providers: 'Prestataires',
+    contacts: 'Contacts'
   },
   footer: {
-    aboutUs: 'À propos',
-    services: 'Services',
-    description: 'Dening Insights, votre partenaire de confiance pour les services de conseil aux entreprises en Afrique subsaharienne.',
-    dueDiligence: 'Due Diligence',
-    businessDevelopment: 'Business Development',
-    backgroundChecks: 'Background Checks',
-    contact: 'Contact',
-    address: '123 Rue de la Paix, Paris, France',
-    phone: '+33 1 23 45 67 89',
-    email: 'contact@deninginsights.com',
-    copyright: 'Tous droits réservés.',
-    followUs: 'Suivez-nous'
-  }
+    aboutUs: "À propos",
+    services: "Nos Services",
+    pageLinks: "Lien de Page",
+    ourServices: "Nos services",
+    pages: "Nos Pages",
+    followUs: "Suivez-nous",
+    home: "Accueil",
+    providers: "Nos Prestataires",
+    copyright: "Tous droits réservés.",
+  },
+  hero: {
+    title: "Assistance routière rapide et fiable.",
+    description: "Découvrez MsaAda Afrika, la plateforme numérique qui vous offre une assistance routière rapide et fiable partout en Afrique.",
+    becomeProvider: "Devenir Prestataire",
+    bookAppointment: "Prendre une Rendez vous",
+    imageAlt: "Femme souriante utilisant l'application MsaAda Afrika",
+  },
+  becomeProvider: {
+    title: "Pourquoi Devenir Prestataire Chez Nous?",
+    benefit1: "Lorem ipsum dolor sit amet consectetur.",
+    benefit2: "Neque proin placerat sit",
+    benefit3: "Feugiat eget risus pharetra sit a.",
+    benefit4: "Neque proin placerat sit",
+    benefit5: "Neque proin placerat sit",
+    namePlaceholder: "Nom",
+    emailPlaceholder: "Email",
+    submitButton: "Soumettre",
+  },
+  partners: {
+    title: "Nos Partenaires",
+  },
+  prestataires: {
+    title: "Nos Prestataires",
+    recentTitle: "Prestataires Récents",
+    description: "Lorem ipsum dolor sit amet consectetur.",
+    readMore: "En savoir plus",
+  },
+  testimonials: {
+    testimonial1: {
+      name: "PDG AFRIKA GARAGE",
+      role: "IDF",
+      content: [
+        "Lorem ipsum dolor sit amet consectetur. Neque proin placerat sit feugiat eget risus pharetra sit a.",
+        "Lorem ipsum dolor sit amet consectetur. Neque proin placerat sit feugiat eget risus pharetra sit a.",
+      ],
+    },
+    testimonial2: {
+      name: "PDG AFRIKA GARAGE",
+      role: "IDF",
+      content: [
+        "Lorem ipsum dolor sit amet consectetur. Neque proin placerat sit feugiat eget risus pharetra sit a.",
+        "Lorem ipsum dolor sit amet consectetur. Neque proin placerat sit feugiat eget risus pharetra sit a.",
+      ],
+    },
+  },
+  whoUs: {
+    title: "Qu'est-ce que MSA Afrika ?",
+    description: "MsaAda AfriKa est une plateforme en ligne qui offre une assistance routière rapide et fiable aux conducteurs en difficulté en Afrique. Nous utilisons la technologie pour connecter les conducteurs avec des professionnels de l'assistance en temps réel. Notre objectif est de rendre les routes plus sûres et de garantir la tranquillité d'esprit des conducteurs.",
+    coverageTitle: "Localisation des couverage",
+    imageAlt: "Carte de localisation des interventions",
+  },
 }
 
-export default fr 
+export default fr
