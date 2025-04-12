@@ -120,6 +120,6 @@
     @apply bg-background text-foreground;
   }
   .custom-container{
-    @apply m-auto p-5 max-w-[1440px];
+    @apply w-full max-w-7xl mx-auto px-4;
   }
 }

@@ -83,7 +83,7 @@ export default function Header() {
                     </li>
                   ))}
                 </ul>
-                <Button
+                {/* <Button
                   variant={"default"}
                   size={"lg"}
                   className="bg-[#4C535D] text-white w-full"
@@ -91,7 +91,7 @@ export default function Header() {
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href={"/login"}>Se connecter</Link>
-                </Button>
+                </Button> */}
               </div>
             </SheetContent>
           </Sheet>

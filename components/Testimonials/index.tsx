@@ -82,8 +82,8 @@ export default function Testimonials() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex cursor-pointer" />
-          <CarouselNext className="hidden md:flex cursor-pointer" />
+          {/* <CarouselPrevious className="hidden md:flex cursor-pointer" />
+          <CarouselNext className="hidden md:flex cursor-pointer" /> */}
         </Carousel>
       </div>
     </section>

@@ -15,7 +15,7 @@ export default function Hero() {
               background: "linear-gradient(92deg, #BA0218 0%, #54010B 50%, transparent 100%)"
             }}
           />
-          <div className="max-w-[1540px] lg:pl-25 m-auto text-white space-y-6 py-16 z-50 px-4 lg:px-8">
+          <div className="m-auto text-white space-y-6 py-16 z-50 px-4 lg:px-8">
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
               Assistance routière
               <br />
